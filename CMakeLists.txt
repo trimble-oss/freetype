@@ -180,6 +180,11 @@ set(BASE_SRCS
   src/winfonts/winfnt.c
 )
 
+if (WIN32)
+  enable_language(RC)
+  list(APPEND BASE_SRCS src/base/ftver.rc)
+endif()
+
 include_directories("src/truetype")
 include_directories("src/sfnt")
 include_directories("src/autofit")
