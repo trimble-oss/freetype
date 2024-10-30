@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Freetype-Tekla.redist</id>
+    <version>2.5.5.0</version>
+    <authors>David Turner, Robert Wilhelm, and Werner Lemberg</authors>
+    <owners>David Turner, Robert Wilhelm, and Werner Lemberg</owners>
+    <licenseUrl>https://www.freetype.org/</licenseUrl>
+    <projectUrl>https://www.freetype.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Redistributable components for package 'Freetype-Tekla'.</description>
+    <copyright>Copyright David Turner, Robert Wilhelm, and Werner Lemberg</copyright>
+    <title>Freetype redist (Tekla build)</title>
+    <tags>Freetype  native</tags>
+  </metadata>
+  <files>
+    <file src="Freetype-Tekla.redist.targets" target="\build\native\" />
+
+    <file src="..\Build142\RelWithDebInfo\Freetype.dll" target="\build\native\bin\x64\v142\" />
+    <file src="..\Build142\Debug\Freetype.dll" target="\build\native\bin\x64\v142\DebugCRT\" />
+  </files>
+</package>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Freetype-Tekla</id>
+    <version>2.5.5.0</version>
+    <authors>David Turner, Robert Wilhelm, and Werner Lemberg</authors>
+    <owners>David Turner, Robert Wilhelm, and Werner Lemberg</owners>
+    <licenseUrl>https://www.freetype.org/</licenseUrl>
+    <projectUrl>https://www.freetype.org/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Header and library files for Freetype (x64, v142, Release/DebugCRT). Produces high-quality output of most vector and bitmap font formats</description>
+    <copyright>Copyright David Turner, Robert Wilhelm, and Werner Lemberg</copyright>
+    <title>Freetype (Tekla build)</title>
+    <tags>Freetype  native</tags>
+  </metadata>
+  <files>
+    <file src="Freetype-Tekla.targets" target="\build\native\" />
+
+    <file src="..\include\**\*" target="\build\native\include\" />
+
+    <file src="..\Build142\RelWithDebInfo\Freetype.lib" target="\build\native\lib\x64\v142\" />
+    <file src="..\Build142\Debug\Freetype.lib" target="\build\native\lib\x64\v142\DebugCRT\" />
+  </files>
+</package>
