@@ -21,3 +21,6 @@ echo %Build% >build.txt
 
 c:/work/nuget.exe pack -Version 2.5.5.%Build% Freetype-Tekla.redist.nuspec
 c:/work/nuget.exe pack -Version 2.5.5.%Build% Freetype-Tekla.nuspec
+
+echo - Sign TS used Nugets by downloading and running signing script from Artifactory
+echo - Upload signed Nugets to Artifactory/Technology feed
